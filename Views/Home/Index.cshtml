@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/site.css" rel="stylesheet" />
+    <title>Cookies Sample</title>
+</head>
+<body>
+    <h1>Saving State in Browser Cookies</h1>
+
+    <form asp-controller="home" asp-action="index" method="post">
+        <div>
+            <label>Value</label>
+            <input type="text" name="value" />
+        </div>
+        <div>
+            <input type="submit" />
+        </div>
+
+        <div>
+            <a asp-controller="home" asp-action="test">Test View</a>
+        </div>
+    </form>
+</body>
+</html>
